@@ -1,0 +1,90 @@
+#inicio {
+  min-height: 100vh;
+  padding: 120px 8% 60px;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at right, rgba(239, 143, 0, .28), transparent 35%),
+    linear-gradient(to right, rgba(0, 0, 0, .94), rgba(0, 0, 0, .55), rgba(0, 0, 0, .22)),
+    url("../images/hero-bg-image.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 2;
+}
+
+.hero-tag {
+  background: rgba(239, 143, 0, .15);
+  border: 1px solid rgba(239, 143, 0, .45);
+  color: #ef8f00;
+  width: fit-content;
+  padding: .6rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  line-height: .9;
+  letter-spacing: 1px;
+}
+
+.hero-content h1 span {
+  color: #ef8f00;
+  display: block;
+}
+
+.hero-content p {
+  color: #d6d6d6;
+  line-height: 1.7;
+  max-width: 520px;
+  font-size: 1.05rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  text-decoration: none;
+  padding: 1rem 1.7rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: .3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.btn-primary {
+  background: #ef8f00;
+  color: #000;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255, 255, 255, .18);
+  color: #fff;
+  background: rgba(255, 255, 255, .06);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-4px);
+}
+
+.btn-primary:hover {
+  background: #ffb300;
+}
