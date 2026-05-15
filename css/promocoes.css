@@ -1,0 +1,28 @@
+.simple-section {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+}
+
+.promo-box {
+  width: min(900px, 100%);
+  background:
+    radial-gradient(circle at right, rgba(239, 143, 0, .2), transparent 35%),
+    linear-gradient(145deg, rgba(255, 255, 255, .07), rgba(255, 255, 255, .025));
+  border: 1px solid rgba(239, 143, 0, .22);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.promo-box h3 {
+  font-size: 2rem;
+}
+
+.promo-box p {
+  color: #bdbdbd;
+  margin-top: .5rem;
+}
