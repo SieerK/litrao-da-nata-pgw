@@ -6,18 +6,21 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ef8f00 #111;
 }
 
 body {
+  font-size: 10pt;
   background: #090909;
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 section {
-  scroll-margin-top: 90px;
+  width: 100vw;
+  scroll-margin-top: 120px;
 }
 
 img {
@@ -26,7 +29,9 @@ img {
 }
 
 button,
-a {
+a,
+input,
+textarea {
   font-family: inherit;
 }
 
@@ -47,7 +52,52 @@ a {
   background: #ffb300;
 }
 
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #ef8f00 #111;
+#btn-topo {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ef8f00;
+  color: #000;
+  font-size: 1.3rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .35);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+#btn-topo:hover {
+  background-color: #ffb300;
+  transform: translateY(-3px);
+}
+
+#btn-topo.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12pt;
+  }
+
+  .avaliacoes-extra {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 14pt;
+  }
+
+  #btn-topo {
+    right: 2rem;
+    bottom: 2rem;
+  }
 }

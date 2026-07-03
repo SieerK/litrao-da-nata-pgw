@@ -10,27 +10,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/cardapio.css">
   <link rel="stylesheet" href="css/promocoes.css">
+  <link rel="stylesheet" href="css/avaliacoes.css">
+  <link rel="stylesheet" href="css/contato.css">
 
   <link rel="icon" type="image/png" href="images/Icon.png">
 
   <title>Litrão da Nata</title>
 </head>
 
-<body>
-
+<body id="topo">
   <header>
     <div class="logo">
       <img src="images/Logo.png" alt="Logo da cervejaria Litrão da Nata">
     </div>
 
-    <nav>
+    <nav aria-label="Menu principal">
       <ul>
         <li><a href="#inicio" class="nav-link active">Início</a></li>
         <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
@@ -40,20 +42,16 @@
       </ul>
     </nav>
 
-    <a href="#" class="pedido-wpp">
-      <i class="fab fa-whatsapp"></i>
+    <a href="#contato" class="pedido-wpp">
+      <i class="fab fa-whatsapp" aria-hidden="true"></i>
       <span>Peça no WhatsApp</span>
     </a>
   </header>
 
   <main>
-
     <section id="inicio" class="page-section">
       <div class="hero-content">
-
-        <span class="hero-tag">
-          🍺 Cervejas Premium
-        </span>
+        <span class="hero-tag">🍺 Cervejas Premium</span>
 
         <h1>
           AS MELHORES BEBIDAS,
@@ -66,20 +64,21 @@
 
         <div class="hero-buttons">
           <a href="#cardapio" class="btn-primary">
-            <i class="fa-solid fa-beer-mug-empty"></i>
+            <i class="fa-solid fa-beer-mug-empty" aria-hidden="true"></i>
             Ver Cardápio
           </a>
 
-          <a href="#promocoes" class="btn-secondary">
-            Promoções
-          </a>
+          <a href="#promocoes" class="btn-secondary">Promoções</a>
         </div>
-
       </div>
     </section>
 
-    <section id="cardapio" class="page-section">
+    <div class="info-extra">
+      <h2>Entrega rápida</h2>
+      <p>Pedidos organizados com agilidade para sua bebida chegar sempre gelada.</p>
+    </div>
 
+    <section id="cardapio" class="page-section">
       <div class="section-title">
         <span>Cardápio</span>
         <h2>NOSSAS BEBIDAS</h2>
@@ -87,10 +86,9 @@
       </div>
 
       <div class="cards">
-
         <article class="card">
           <div class="card-image">
-            <img src="images/brahma-lata-image.png" alt="Brahma">
+            <img src="images/brahma-lata-image.png" alt="Lata de cerveja Brahma">
           </div>
 
           <div class="card-info">
@@ -110,16 +108,16 @@
               </div>
             </div>
 
-            <button>
-              <i class="fab fa-whatsapp"></i>
+            <a href="#contato" class="card-button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
               Pedir agora
-            </button>
+            </a>
           </div>
         </article>
 
         <article class="card">
           <div class="card-image">
-            <img src="images/amstel-lata-image.png" alt="Amstel">
+            <img src="images/amstel-lata-image.png" alt="Lata de cerveja Amstel">
           </div>
 
           <div class="card-info">
@@ -139,10 +137,10 @@
               </div>
             </div>
 
-            <button>
-              <i class="fab fa-whatsapp"></i>
+            <a href="#contato" class="card-button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
               Pedir agora
-            </button>
+            </a>
           </div>
         </article>
 
@@ -150,7 +148,7 @@
           <div class="selo">Mais vendida</div>
 
           <div class="card-image">
-            <img src="images/heineken-lata-image.png" alt="Heineken">
+            <img src="images/heineken-lata-image.png" alt="Lata de cerveja Heineken">
           </div>
 
           <div class="card-info">
@@ -170,16 +168,16 @@
               </div>
             </div>
 
-            <button>
-              <i class="fab fa-whatsapp"></i>
+            <a href="#contato" class="card-button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
               Pedir agora
-            </button>
+            </a>
           </div>
         </article>
 
         <article class="card">
           <div class="card-image">
-            <img src="images/corona-lata-image.png" alt="Corona">
+            <img src="images/corona-lata-image.png" alt="Lata de cerveja Corona">
           </div>
 
           <div class="card-info">
@@ -199,16 +197,16 @@
               </div>
             </div>
 
-            <button>
-              <i class="fab fa-whatsapp"></i>
+            <a href="#contato" class="card-button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
               Pedir agora
-            </button>
+            </a>
           </div>
         </article>
 
         <article class="card">
           <div class="card-image">
-            <img src="images/bohemia-lata-image.png" alt="Bohemia">
+            <img src="images/bohemia-lata-image.png" alt="Lata de cerveja Bohemia">
           </div>
 
           <div class="card-info">
@@ -228,16 +226,26 @@
               </div>
             </div>
 
-            <button>
-              <i class="fab fa-whatsapp"></i>
+            <a href="#contato" class="card-button">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
               Pedir agora
-            </button>
+            </a>
           </div>
         </article>
+      </div>
+    </section>
 
+    <div class="avaliacoes-extra">
+      <div>
+        <strong>★★★★★</strong>
+        <p>“Atendimento rápido e preço justo. Recomendo muito!”</p>
       </div>
 
-    </section>
+      <div>
+        <strong>★★★★★</strong>
+        <p>“As bebidas chegam sempre geladas e bem embaladas.”</p>
+      </div>
+    </div>
 
     <section id="promocoes" class="page-section simple-section">
       <div class="section-title">
@@ -252,7 +260,7 @@
           <p>Monte seu pedido pelo WhatsApp e consulte as promoções disponíveis.</p>
         </div>
 
-        <a href="#" class="btn-primary">Ver promoções</a>
+        <a href="#contato" class="btn-primary">Ver promoções</a>
       </div>
     </section>
 
@@ -260,9 +268,24 @@
       <div class="section-title">
         <span>Sobre nós</span>
         <h2>LITRÃO DA NATA</h2>
-        <p>
-          Uma cervejaria criada para quem gosta de bebida gelada, preço justo e atendimento rápido.
-        </p>
+        <p>Uma cervejaria criada para quem gosta de bebida gelada, preço justo e atendimento rápido.</p>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-card">
+          <h3>Missão</h3>
+          <p>Oferecer bebidas de qualidade com atendimento simples, rápido e confiável.</p>
+        </div>
+
+        <div class="sobre-card">
+          <h3>Diferencial</h3>
+          <p>Trabalhamos com organização, bons preços e foco na experiência do cliente.</p>
+        </div>
+
+        <div class="sobre-card">
+          <h3>Compromisso</h3>
+          <p>Entregar produtos bem selecionados, sempre valorizando praticidade e satisfação.</p>
+        </div>
       </div>
     </section>
 
@@ -270,16 +293,40 @@
       <div class="section-title">
         <span>Contato</span>
         <h2>FAÇA SEU PEDIDO</h2>
-        <p>Chame no WhatsApp e peça sua bebida favorita.</p>
+        <p>Preencha o formulário ou chame diretamente no WhatsApp.</p>
       </div>
 
-      <a href="#" class="btn-primary contato-btn">
-        <i class="fab fa-whatsapp"></i>
-        Peça no WhatsApp
-      </a>
-    </section>
+      <form class="form-contato" id="formContato">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
 
+        <div>
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        </div>
+
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Digite seu pedido" required></textarea>
+        </div>
+
+        <button type="submit" id="btn-pedido">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          Enviar pedido
+        </button>
+      </form>
+    </section>
   </main>
+
+  <button id="btn-topo" type="button" aria-label="Voltar ao início da página">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <div id="toast" class="toast">
+    Pedido registrado com sucesso! Verifique seu WhatsApp para continuar o atendimento.
+  </div>
 
   <script src="script.js"></script>
 </body>

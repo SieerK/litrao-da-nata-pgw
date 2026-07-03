@@ -1,6 +1,6 @@
 #inicio {
   min-height: 100vh;
-  padding: 120px 8% 60px;
+  padding: 7rem 5% 4rem;
   display: flex;
   align-items: center;
   background:
@@ -56,35 +56,8 @@
   margin-top: 1rem;
 }
 
-.btn-primary,
-.btn-secondary {
-  text-decoration: none;
-  padding: 1rem 1.7rem;
-  border-radius: 999px;
-  font-weight: 700;
-  transition: .3s;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-}
-
-.btn-primary {
-  background: #ef8f00;
-  color: #000;
-}
-
-.btn-secondary {
-  border: 1px solid rgba(255, 255, 255, .18);
-  color: #fff;
-  background: rgba(255, 255, 255, .06);
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-  transform: translateY(-4px);
-}
-
-.btn-primary:hover {
-  background: #ffb300;
+@media (min-width: 768px) {
+  #inicio {
+    padding: 8rem 8% 4rem;
+  }
 }

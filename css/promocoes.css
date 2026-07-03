@@ -1,7 +1,9 @@
 .simple-section {
   min-height: 60vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .promo-box {
@@ -13,8 +15,10 @@
   border-radius: 1.5rem;
   padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 
@@ -25,4 +29,11 @@
 .promo-box p {
   color: #bdbdbd;
   margin-top: .5rem;
+}
+
+@media (min-width: 768px) {
+  .promo-box {
+    flex-direction: row;
+    text-align: left;
+  }
 }
